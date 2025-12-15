@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd ../.. && npm install && npm install --workspace=@finora/shared --workspace=@finora/supabase && npm run build:packages && cd apps/web && npm run build",
+  "buildCommand": "cd ../.. && npm install && npm install --workspace=@finora/shared --workspace=@finora/supabase --include=dev && npm run build:packages && cd apps/web && npm run build",
   "outputDirectory": ".next",
   "installCommand": "cd ../.. && npm install"
 }

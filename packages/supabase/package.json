@@ -11,9 +11,9 @@
     "./database.types": "./dist/database.types.js"
   },
   "scripts": {
-    "build": "npx tsc",
-    "dev": "npx tsc --watch",
-    "type-check": "npx tsc --noEmit",
+    "build": "../../node_modules/.bin/tsc || node_modules/.bin/tsc || npx --yes -p typescript tsc",
+    "dev": "../../node_modules/.bin/tsc --watch || node_modules/.bin/tsc --watch",
+    "type-check": "../../node_modules/.bin/tsc --noEmit || node_modules/.bin/tsc --noEmit",
     "clean": "rm -rf dist"
   },
   "dependencies": {
