@@ -1,0 +1,26 @@
+{
+  "name": "@finora/supabase",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./server": "./dist/server.js",
+    "./client": "./dist/client.js",
+    "./queries": "./dist/queries.js",
+    "./database.types": "./dist/database.types.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.4",
+    "@supabase/ssr": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
