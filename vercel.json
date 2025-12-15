@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd ../.. && npm install && npm run build:packages && cd apps/web && npm run build",
+  "buildCommand": "npm install && cd packages/shared && npm install && npm run build && cd ../supabase && npm install && npm run build && cd ../../apps/web && npm run build",
   "outputDirectory": "apps/web/.next",
-  "installCommand": "cd ../.. && npm install"
+  "installCommand": "npm install"
 }
