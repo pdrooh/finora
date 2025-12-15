@@ -11,9 +11,9 @@
     "./database.types": "./dist/database.types.js"
   },
   "scripts": {
-    "build": "node ../../node_modules/typescript/bin/tsc",
-    "dev": "node ../../node_modules/typescript/bin/tsc --watch",
-    "type-check": "node ../../node_modules/typescript/bin/tsc --noEmit",
+    "build": "node ../../node_modules/typescript/lib/tsc.js",
+    "dev": "node ../../node_modules/typescript/lib/tsc.js --watch",
+    "type-check": "node ../../node_modules/typescript/lib/tsc.js --noEmit",
     "clean": "rm -rf dist"
   },
   "dependencies": {
