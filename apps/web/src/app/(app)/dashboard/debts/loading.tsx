@@ -9,7 +9,7 @@ export default function DebtsLoading() {
           <h1 className="text-3xl font-bold">Dívidas</h1>
           <p className="text-muted-foreground">Gerencie suas dívidas e empréstimos</p>
         </div>
-        <CardSkeleton className="h-10 w-32" />
+        <div className="h-10 w-32 rounded-md bg-muted animate-pulse" />
       </div>
       <DataTableSkeleton />
     </div>
