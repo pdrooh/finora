@@ -29,18 +29,14 @@
 1. Acesse: https://vercel.com
 2. Clique em **"Add New Project"**
 3. Conecte seu repositório Git
-4. **IMPORTANTE**: O arquivo `vercel.json` já está configurado! Apenas verifique:
-   - **Framework Preset**: Next.js (detectado automaticamente)
-   - **Root Directory**: `apps/web` (já configurado no vercel.json)
-   - **Build Command**: Será usado do `vercel.json` automaticamente
-   - **Output Directory**: `apps/web/.next` (já configurado)
-   - **Install Command**: `npm install` (já configurado)
+4. **IMPORTANTE**: Configure manualmente no painel do Vercel:
+   - **Framework Preset**: Next.js
+   - **Root Directory**: `apps/web` ⚠️ **Configure no painel (Settings → General → Root Directory)**
+   - **Build Command**: (deixe vazio - será usado do vercel.json automaticamente)
+   - **Output Directory**: `apps/web/.next` (já configurado no vercel.json)
+   - **Install Command**: (deixe vazio - será usado do vercel.json automaticamente)
 
-   ⚠️ **Se precisar configurar manualmente:**
-   - **Root Directory**: `apps/web`
-   - **Build Command**: `npm install && npm run build:packages && cd apps/web && npm run build`
-   - **Output Directory**: `apps/web/.next`
-   - **Install Command**: `npm install`
+   ⚠️ **O `rootDirectory` NÃO pode estar no vercel.json! Configure no painel do Vercel.**
 
 ### Passo 3: Configurar Variáveis de Ambiente
 

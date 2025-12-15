@@ -51,7 +51,7 @@ O `vercel.json` está configurado para:
    - Compila os packages compartilhados (`@finora/shared`, `@finora/supabase`)
    - Depois faz build do Next.js em `apps/web`
 3. **Output Directory**: Aponta para `apps/web/.next`
-4. **Root Directory**: Define `apps/web` como raiz do projeto
+4. **Root Directory**: Deve ser configurado no painel do Vercel (Settings → General → Root Directory: `apps/web`)
 
 ---
 
