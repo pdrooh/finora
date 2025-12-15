@@ -9,7 +9,7 @@ export default function IncomesLoading() {
           <h1 className="text-3xl font-bold">Receitas</h1>
           <p className="text-muted-foreground">Gerencie suas receitas e rendas</p>
         </div>
-        <CardSkeleton className="h-10 w-32" />
+        <div className="h-10 w-32 rounded-md bg-muted animate-pulse" />
       </div>
       <DataTableSkeleton />
     </div>

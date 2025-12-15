@@ -7,7 +7,7 @@ export default function SettingsLoading() {
         <h1 className="text-3xl font-bold">Configurações</h1>
         <p className="text-muted-foreground">Gerencie suas configurações</p>
       </div>
-      <CardSkeleton className="h-96" />
+      <div className="h-96 rounded-md bg-muted animate-pulse" />
     </div>
   )
 }

@@ -9,12 +9,12 @@ export default function DashboardLoading() {
       </div>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {Array.from({ length: 4 }).map((_, i) => (
-          <CardSkeleton key={i} className="h-32" />
+          <div key={i} className="h-32 rounded-md bg-muted animate-pulse" />
         ))}
       </div>
       <div className="grid gap-4 md:grid-cols-2">
-        <CardSkeleton className="h-80" />
-        <CardSkeleton className="h-80" />
+        <div className="h-80 rounded-md bg-muted animate-pulse" />
+        <div className="h-80 rounded-md bg-muted animate-pulse" />
       </div>
     </div>
   )
